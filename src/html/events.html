@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/styles.min.css" />
+        <link rel="stylesheet" href="styles/styles.min.css" /> -->
+        @@include('blocks/head.html')
     </head>
     <body class = "body">
         @@include('blocks/page-header.html')
         <main class="main">
             <div class="events">
-                <section class="listing events__listing">
-                  <h2 class="listing__title section-title">Мероприятия</h2>
-                  <div class="listing__events-list">
-                    <!-- prettier-ignore -->
+                <section class="listing events_listing">
+                  <h2 class="listing_title section-title section-title_text">Мероприятия</h2>
+                  <div class="listing_events-list">
+                    @@include('blocks/event-card.html')
+                    <!-- prettier-ignore
                     @@loop('blocks/event-card.html', [
                       {
                         "class": "listing__event-card",
@@ -33,7 +35,7 @@
                         "time": "14.12.2022 | начало 18.30",
                         "datetime": "2022-12-14T18:30"
                       }
-                    ])
+                    ]) -->
                   </div>
             <!-- <div class="events">
                 <div class="events_listing listing">
