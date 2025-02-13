@@ -6,18 +6,40 @@
         <main class="main">
             <div class="home">
                 <div class="main_logo-quote">
-                    <h2 class="logo-quote_quote">Арт - пространство</h2>
+                    <h2 class="main_logo-quote_quote">Арт - пространство</h2>
                     <img
                     src = "assets/images/LENNI.svg"
                     alt = "lenni"
-                    class = "logo-quote_logo"/>
-                    <h2 class="logo-quote_quote">Для людей, горящих сердцем и делом<br>Место для настоящего</h2>
+                    class = "main_logo-quote_logo"/>
+                    <h2 class="main_logo-quote_quote">Для людей, горящих сердцем и делом<br>Место для настоящего</h2>
                 </div>
                 
             </div>
+            <div class="buttons-iwant">
+                <div class="main_btns">
+                    <h3 class="btn1_iwant">Я хочу</h3>
+                    <div class="btn1_btn-row">
+                        <a href="html/blocks/event-pp.html" class="btn btn-orange">Провести мероприятие</a>
+                        <a class="btn" href="#">Стать арендатором</a>
+                    </div>
+                </div>
+            </div>
+            <div class="events">
+                <section class="events_listing listing">
+                  <h2 class="listing_title section-title section-title_text">Мероприятия</h2>
+                  <div class="listing_events-list">
+                    @@include('blocks/event-card.html')
+                  </div>
+                  @@include('blocks/table.html', {"class": "events_tariff-table"})
+                </section>
+            </div>
+            <div class="events">
+                <div class="events_listing listing">
+                    <h2 class="listing_title section-title section-title_text">Блог</h2>
+                </div>
+            </div>
         </main>
         <footer class="page-footer">
-            footer
         </footer>
         @@include('blocks/event-pp.html')
     </body>

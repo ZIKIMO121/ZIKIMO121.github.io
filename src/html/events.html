@@ -11,7 +11,7 @@
         @@include('blocks/page-header.html')
         <main class="main">
             <div class="events">
-                <section class="listing events_listing">
+                <section class="events_listing listing">
                   <h2 class="listing_title section-title section-title_text">Мероприятия</h2>
                   <div class="listing_events-list">
                     @@include('blocks/event-card.html')
@@ -37,6 +37,7 @@
                       }
                     ]) -->
                   </div>
+                  @@include('blocks/table.html', {"class": "events_tariff-table"})
             <!-- <div class="events">
                 <div class="events_listing listing">
                     <h2 class="listing_title section-title">Мероприятия</h2>
