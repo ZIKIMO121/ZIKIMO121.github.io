@@ -1,0 +1,120 @@
+.aboutus {
+    &_container {
+        .container();
+    }
+
+    
+    &_block1{
+        width: 1334px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "mil 1";
+        margin-bottom: 100px;
+    }
+    &_millenials{
+        margin: 50px 0 0;
+        font-size: 44px;
+        grid-area: mil;
+     }
+     &_text1{
+        margin-top: 160px;
+        grid-area: 1;
+        max-width: 870px;
+        margin-left: 0;
+     }
+
+    &_block2{
+        display: grid; 
+        grid-template-columns: 1fr 400px; 
+        grid-template-areas:
+            "pic1 pic2"
+            "title pic2"
+            "text text";
+        gap: 50px 60px;
+    }
+    &_picture1 {
+        grid-area: pic1;
+    }
+    &_subtitle{
+        grid-area: title;
+        margin: 50px 0 0;
+        font-size: 44px;
+    }
+    &_text3,
+    &_text4{
+        font-family: @font1;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24.51px;
+    }
+    &_picture2{
+        grid-area: pic2;
+        align-self: flex-end;
+    }
+
+    
+    &_block3-img{
+        position: absolute;
+        top: 19px;
+        left: 49px;
+        width: calc(100% - 57px);
+        object-fit: contain;
+    }
+
+    &_textblock2{
+        width: 334px;
+        margin-top: 255px;
+        margin-left: 60px;
+        grid-area: textblock2;
+        display: flex;
+        flex-direction: column;
+    }
+
+     &_bottom{
+        width: 1334px;
+        margin-bottom: 210px;
+        display: grid;
+        grid-template-columns: 930px 344px;
+        grid-template-areas: "pic3 textblock2";
+    }
+
+    &_block3-picture{
+        grid-area: pic3;
+        // display: block;
+        display: flex;
+        margin-top: 110px;
+        max-width: 930px;
+        box-sizing: border-box;
+        position: relative;
+        padding: 18px 19px 0 49px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 64.7%;
+            background-color: @red;
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 40.86%;
+        }
+    }
+
+    &_btn{
+        display: inline-flex;
+        font-family: @font1;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.3; 
+        margin-top: 89px;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        border: none;
+        padding: 0 0;
+    }
+}

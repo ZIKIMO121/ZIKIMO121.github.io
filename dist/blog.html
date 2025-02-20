@@ -12,16 +12,40 @@
   <header class="page-header">
     <div class="page-header_container">
       <a href="index.html" class="page-header_logo">
-        <img src="assets/images/logo.svg" class="page-header_logo-icon" />
+        <!-- <img src="assets/images/logo.svg" class="page-header_logo-icon"/> -->
+        <svg class="page-header_logo-icon" width="202" height="147">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
       </a>
       <nav class="page-header_nav">
         <a href="events.html" class="page-header_nav-link">Мероприятия</a>
         <a href="blog.html" class="page-header_nav-link">Блог</a>
-        <a href="#" class="page-header_nav-link">О нас</a>
+        <a href="aboutus.html" class="page-header_nav-link">О нас</a>
         <a href="#" class="page-header_nav-link">Контакты</a>
+
+        <div class="page-header_nav-user">
+          <a href="#" class="page-header_nav-user-link">
+            Александр С.
+          </a>
+
+          <a href="#" class="page-header_nav-logout">
+            <svg class="page-header_logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
-      <div class="page-header_right block">
-        <a href="#" type="button" class="page-header_btn btn">Войти</a>
+      <div class="page-header_right-block">
+        <!-- <a href="#" type="button" class="page-header_btn btn">Войти</a> -->
+        <a href="#" class="btn page-header_btn">Войти
+          <svg class="page-header_user-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+
+        <button type="button" class="page-header_nav-toggle" id="js-navToggle">
+          <div class="page-header_nav-toggle-line"></div>
+        </button>
       </div>
     </div>
   </header>
@@ -31,6 +55,64 @@
         <h2 class="listing_title section-title section-title_text">Блог</h2>
       </div>
     </div>
+    <div class="listing_blog-list">
+      <!-- prettier-ignore -->
+      <article class="blog-card listing_blog-card">
+        <a href="#" class="blog-card_link">
+          <div class="blog-card_container">
+            <picture class="blog-card_picture">
+              <img src="assets/images/theatre.jpg" alt="theatre" class="blog-card_img" />
+            </picture>
+            <div class="blog-card_info">
+              <time datetime="2022-26-11" calss="blog-card_time">26.11.2022</time>
+              <h1 class="blog-card_title">Фотосессия в стенах Театра драмы</h1>
+              <p class="blog-card_description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было.</p>
+            </div>
+            <svg class="blog-card_icon" width="60" height="91">
+              <use xlink:href="assets/icons/symbols.svg#frame"></use>
+            </svg>
+          </div>
+          <div class="blog-card_lines"></div>
+        </a>
+      </article>
+      <article class="blog-card listing_blog-card">
+        <a href="#" class="blog-card_link">
+          <div class="blog-card_container">
+            <picture class="blog-card_picture">
+              <img src="assets/images/VR.jpg" alt="VR" class="blog-card_img" />
+            </picture>
+            <div class="blog-card_info">
+              <time datetime="2022-05-11" calss="blog-card_time">05.11.2022</time>
+              <h1 class="blog-card_title">Выставка VR в Томске</h1>
+              <p class="blog-card_description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
+            </div>
+            <svg class="blog-card_icon" width="60" height="91">
+              <use xlink:href="assets/icons/symbols.svg#frame"></use>
+            </svg>
+          </div>
+          <div class="blog-card_lines"></div>
+        </a>
+      </article>
+      <article class="blog-card listing_blog-card">
+        <a href="#" class="blog-card_link">
+          <div class="blog-card_container">
+            <picture class="blog-card_picture">
+              <img src="assets/images/radio.jpg" alt="radio" class="blog-card_img" />
+            </picture>
+            <div class="blog-card_info">
+              <time datetime="2022-11-01T20:00" calss="blog-card_time">01.11.2022</time>
+              <h1 class="blog-card_title">Rocking radio в заброшенном ангаре</h1>
+              <p class="blog-card_description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
+            </div>
+            <svg class="blog-card_icon" width="60" height="91">
+              <use xlink:href="assets/icons/symbols.svg#frame"></use>
+            </svg>
+          </div>
+          <div class="blog-card_lines"></div>
+        </a>
+      </article>
+    </div>
+    <div class="blog_listing watch-all">Смотреть все</div>
   </main>
   <footer class="page-footer">
     footer

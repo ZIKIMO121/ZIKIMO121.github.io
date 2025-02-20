@@ -5,17 +5,18 @@
     display: inline-flex;
     align-items: flex-start;
     min-height: 24px;
-    padding-top: 24px;
+    padding-top: 2px;
     color: @black;
     cursor: pointer;
     &_input{
-        .is-hidden
+        .is-hidden();
         &:checked{
             & ~ .check_mark{
             background-color: @black;
             &::after{
-                content: '';
+                content: "";
                 position: absolute;
+                display: block;
                 top: 2px;
                 left: 7px;
                 width: 6px;
@@ -29,6 +30,8 @@
     }
 }
     &_mark{
+        box-sizing: border-box;
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
@@ -41,7 +44,7 @@
     &_label{
         margin-left:15px ;
         font-weight:400px ;
-        font-size: 400px;
+        font-size: 16px;
         line-height: 1.3;
         color: @black;
     }
